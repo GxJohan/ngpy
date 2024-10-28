@@ -2,9 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormGroup, NonNullableFormBuilder, Validators } from '@angular/forms';
+
+// Importaciones de ng-zorro
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @Component({
   selector: 'app-welcome',
@@ -17,7 +22,10 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
     ReactiveFormsModule,
     NzFormModule,
     NzInputModule,
-    NzCheckboxModule
+    NzCheckboxModule,
+    NzButtonModule,
+    NzGridModule,
+    NzIconModule
   ],
 })
 export class WelcomeComponent implements OnInit {
@@ -31,9 +39,7 @@ export class WelcomeComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-    // Implementation of ngOnInit
-  }
+  ngOnInit(): void {}
 
   submitForm(): void {
     if (this.validateForm.valid) {

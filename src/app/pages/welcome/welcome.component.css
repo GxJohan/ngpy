@@ -12,6 +12,9 @@
 
 .login-form-button {
   width: 100%;
+  color: #fff;
+  background-color: #1890ff;
+  border-color: none;
 }
 
 /* Nuevos estilos para centrar el formulario */
